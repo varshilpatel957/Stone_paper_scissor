@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors Game</title>
+    <link rel="stylesheet" href="game2.css">
+</head>
+
+<body>
+    <div class="top-banner">
+        Stone Paper Scissors
+    </div>
+
+    <div class="container">
+        <div id="welcomePage">
+            <h1>Welcome to the Game!</h1>
+            <p>Please enter your name to begin:</p>
+            <input type="text" id="username" placeholder="Enter your name">
+            <input type="number" id="score" placeholder="Enter win points">
+            <button onclick="startGame()">Start Game</button>
+        </div>
+
+        <div id="gamePage" style="display: none;">
+            <h1>Play the Game</h1>
+            <div class="options">
+                <div class="option" id="stone">
+                    <img src="rock.png" alt="Stone">
+                </div>
+                <div class="option" id="paper">
+                    <img src="paper.png" alt="Paper">
+                </div>
+                <div class="option" id="scissors">
+                    <img src="scissor.png" alt="Scissors">
+                </div>
+            </div>
+
+            <div class="userscore">
+                User Score: <span id="usc">---</span>
+            </div>
+            <div class="comp_score">
+                Computer Score: <span id="csc">---</span>
+            </div>
+
+            <div class="computer-choice">
+                <span>Computer's choice: <span id="computerChoice">---</span></span>
+            </div>
+        </div>
+        <div id="Restart" style="display: none;">
+            <button onclick="startGame()">Restart</button>
+        </div>
+    </div>
+    <script src="game2.js"></script>
+</body>
+
+</html>
